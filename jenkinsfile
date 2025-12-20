@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+    stages {
+        stage('Run Shell Script') {
+            steps {
+                sh '''
+                    #!/bin/bash
+                    echo "Hello, world!"
+                    ls -l
+                '''
+            }
+        }
+        stage('Run Batch Script (Windows)') {
+            steps {
+                bat '''
+                    @echo off
+                    echo Hello, world!
+                    dir
+                '''
+            }
+        }
+    }
+}
+

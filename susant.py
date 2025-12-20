@@ -75,3 +75,49 @@ elif amount >= 5000 and amount <10000:
 else:
     total = amount-amount*0.25
 print('pay:', total)
+
+dayNo = int(input('Enter a Day Number'))
+if dayNo == 0:
+    print('Monday')
+elif dayNo == 1:
+    print ('Tuesday')
+elif dayNo == 2:
+    print('Wednesday')
+elif dayNo == 3:
+    print('Thursday')
+elif dayNo == 4:
+    print('Firday')
+elif dayNo == 5:
+    print('Saturday')
+elif dayNo == 6:
+    print('Sunday')
+else:
+    print('Invalid Day Number')
+    
+digit = int(input('Enter a number'))
+if digit == 0:
+    print('zero')
+elif digit == 1:
+    print('one')
+elif digit == 2:
+    print('two')
+else:
+    print('Invalid No')
+
+
+year = int(input('Enter a year'))
+if year % 100 == 0:
+    if year % 400 == 0:
+        print('Leap year')
+    else:
+        print('Not a Leap year')
+elif year % 4 == 0:
+    print('Leap year')
+else:
+    print('not leap year')
+
+
+s1 = 'software'
+s2 = 'Hardware'
+
+s1 > s2
